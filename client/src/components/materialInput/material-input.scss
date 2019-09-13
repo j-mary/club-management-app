@@ -1,0 +1,123 @@
+#material-text-field {
+  position: relative;
+  margin-bottom: 30px;
+
+  .text-error {
+    color: #ef5350;
+  }
+
+  .highlight {
+    position: absolute;
+    height: 60%;
+    width: 100px;
+    top: 25%;
+    left: 0;
+    pointer-events: none;
+    opacity: 0.5;
+  }
+
+  label, .material-input-label {
+    color: #999;
+    font-size: 16px;
+    font-weight: normal;
+    position: absolute;
+    pointer-events: none;
+    top: 10px;
+    transition: 0.2s ease all;
+    -moz-transition: 0.2s ease all;
+    -webkit-transition: 0.2s ease all;
+  }
+
+  .text-area {
+    border: none;
+    border-bottom: 1px solid #ebebeb;
+    padding: 0 0 14px;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -0.3px;
+    color: #191919;
+    width: 100%;
+    outline: 0;
+    font-family: 'Roboto', sans-serif;
+  }
+
+  .text-area:focus ~ label,
+  .text-area:valid ~ label,
+  .text-area:focus ~ .material-input-label,
+  .text-area:valid ~ .material-input-label {
+    top: -20px;
+    font-size: 10px;
+    color: #999;
+    text-transform: uppercase;
+  }
+
+  .text-area:focus ~ .bar:before,
+  .text-area:focus ~ .bar:after {
+    width: 50%;
+  }
+
+  .bar {
+    position: relative;
+    display: block;
+  }
+  .bar:before,
+  .bar:after {
+    content: '';
+    height: 2px;
+    width: 0;
+    bottom: 1px;
+    position: absolute;
+    background: #9c1c26;
+    transition: 0.2s ease all;
+    -moz-transition: 0.2s ease all;
+    -webkit-transition: 0.2s ease all;
+  }
+  .bar:before {
+    left: 50%;
+  }
+  .bar:after {
+    right: 50%;
+  }
+
+  .hide-on-focus {
+    font-size: 14px;
+
+    &::-webkit-input-placeholder {
+      visibility: hidden;
+    }
+
+    &:-moz-placeholder {
+      /* Firefox 18- */
+      visibility: hidden;
+    }
+
+    &::-moz-placeholder {
+      /* Firefox 19+ */
+      visibility: hidden;
+    }
+
+    &:-ms-input-placeholder {
+      visibility: hidden;
+    }
+  }
+
+  .hide-on-focus:focus {
+    &::-webkit-input-placeholder {
+      visibility: visible;
+    }
+
+    &:-moz-placeholder {
+      /* Firefox 18- */
+      visibility: visible;
+    }
+
+    &::-moz-placeholder {
+      /* Firefox 19+ */
+      visibility: visible;
+    }
+
+    &:-ms-input-placeholder {
+      visibility: visible;
+    }
+  }
+}

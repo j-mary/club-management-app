@@ -8,12 +8,13 @@ const authenticateUserAction = (type, data) => ({
   data,
 });
 
-const authenticateUser = (url, data) => async dispatch => {
+const authenticateUser = (url, data, cb) => async dispatch => {
   try {
     dispatch(loading(AUTHENTICATE_USER, true));
     const request = await axios.post(url, data);
     AuthService.saveToken(request.data.token);
     dispatch(authenticateUserAction('SUCCESS', request.data));
+    cb();
     dispatch(loading(AUTHENTICATE_USER, false));
   } catch (error) {
     dispatch(loading(AUTHENTICATE_USER, false));

@@ -1,0 +1,62 @@
+{
+  "signIn": [
+    {
+      "name": "email",
+      "placeholder": "example@mail.com",
+      "defaultValue": "",
+      "type": "email",
+      "label": "Email address",
+      "id": "email"
+    },
+    {
+      "name": "password",
+      "placeholder": "",
+      "defaultValue": "",
+      "type": "password",
+      "label": "Password",
+      "id": "password"
+    }
+  ],
+  "register": [
+    {
+      "name": "firstName",
+      "placeholder": "",
+      "defaultValue": "",
+      "type": "text",
+      "label": "First Name",
+      "id": "firstName"
+    },
+    {
+      "name": "lastName",
+      "placeholder": "",
+      "defaultValue": "",
+      "type": "text",
+      "label": "Last Name",
+      "id": "lastName"
+    },
+    {
+      "name": "userName",
+      "placeholder": "",
+      "defaultValue": "",
+      "type": "text",
+      "label": "Last Name",
+      "id": "lastName"
+    },
+    {
+      "name": "email",
+      "placeholder": "",
+      "defaultValue": "",
+      "type": "email",
+      "label": "Email",
+      "id": "email"
+    },
+    {
+      "name": "password",
+      "placeholder": "",
+      "defaultValue": "",
+      "type": "password",
+      "label": "Password",
+      "id": "password"
+    }
+  ]
+}

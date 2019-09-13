@@ -1,0 +1,38 @@
+.custom-warning-error-bgColor {
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  color: rgb(45, 49, 56);
+  -webkit-font-smoothing: antialiased;
+  font-weight: 600;
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  -webkit-box-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  justify-content: center;
+  position: relative;
+  background-color: rgb(251, 207, 69);
+  .custom-warning-text {
+    font-size: 170px;
+    letter-spacing: -8px;
+    margin: 48px auto 24px;
+    @media screen and (min-width: 1024px) {
+      font-size: 260px;
+    }
+  }
+  .custom-warning-heading {
+    font-size: 26px;
+    letter-spacing: -1.6px;
+    text-align: center;
+    margin: 0px 36px 10px;
+  }
+  .custom-warning-body {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.33;
+    text-align: center;
+    max-width: 495px;
+    margin: 0px 36px 40px;
+  }
+}

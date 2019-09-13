@@ -1,0 +1,13 @@
+.signin-component {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  padding-bottom: 100px;
+
+  .signin-form{
+    width: 300px;
+    margin-bottom: 10px;
+  }
+}

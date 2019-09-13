@@ -8,7 +8,7 @@ const Main = () => (
   <BrowserRouter>
     <Switch>
       <Route exact path="/" component={Signin} />
-      <Route exact path="/signup" component={Register} />
+      <Route exact path="/register" component={Register} />
       <Route component={NotFound} />
     </Switch>
   </BrowserRouter>
